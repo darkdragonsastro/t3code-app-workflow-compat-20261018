@@ -16,6 +16,7 @@ jobs:
             --field title='Synthetic cross-fork approval fixture' \
             --field body='Trivial public fixture only; no project data or secrets.' \
             --field base=main \
+            --field maintainer_can_modify=false \
             --field head='rickbassham:approval-fixture' \
             --field head_repo='t3code-app-workflow-compat-fork-20261018' \
             --jq .number
