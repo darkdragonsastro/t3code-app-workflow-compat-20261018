@@ -1,0 +1,10 @@
+name: Approval fixture echo
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+permissions: {}
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'Synthetic App-token workflow approval verified'
